@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedOnline - Онлайн-сервис медицинского обслуживания</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>MedOnline</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active" data-tab="home-services">Главная и услуги</a></li>
+                    <li><a href="#" class="nav-link" data-tab="doctors">Врачи</a></li>
+                    <li><a href="#" class="nav-link" data-tab="appointment">Запись онлайн</a></li>
+                    <li><a href="#" class="nav-link" data-tab="testimonials-contacts">Отзывы и контакты</a></li>
+                    <li><a href="#" class="login-btn"><i class="fas fa-user"></i> Личный кабинет</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контейнер для контента вкладок -->
+    <div class="main-content">
+        <!-- Вкладка Главная и Услуги -->
+        <section id="home-services-tab" class="tab-content active">
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Медицинские услуги онлайн</h1>
+                        <p class="hero-subtitle">Запишитесь на прием к врачу без очередей. Получите консультацию специалиста, оформите справки и узнайте результаты анализов онлайн в любое время.</p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-text">Доступ онлайн</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-text">Специалистов</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15мин</span>
+                                <span class="stat-text">Среднее время записи</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary open-tab" data-tab="appointment">Записаться на прием <i class="fas fa-arrow-right"></i></button>
+                            <button class="btn btn-secondary open-tab" data-tab="doctors">Наши врачи</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наши медицинские услуги</h2>
+                    <p>Полный спектр медицинских услуг с использованием современных технологий диагностики и лечения.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Консультации специалистов</h3>
+                            <p>Онлайн и офлайн консультации врачей всех специальностей.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Терапевт</li>
+                                <li><i class="fas fa-check"></i> Кардиолог</li>
+                                <li><i class="fas fa-check"></i> Невролог</li>
+                                <li><i class="fas fa-check"></i> Педиатр</li>
+                            </ul>
+                            <button class="btn btn-outline open-tab" data-tab="appointment">Записаться</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Диагностика и анализы</h3>
+                            <p>Лабораторные исследования, УЗИ, ЭКГ и другие методы диагностики.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Анализы крови</li>
+                                <li><i class="fas fa-check"></i> УЗИ всех органов</li>
+                                <li><i class="fas fa-check"></i> ЭКГ с расшифровкой</li>
+                                <li><i class="fas fa-check"></i> Рентгенография</li>
+                            </ul>
+                            <button class="btn btn-outline open-tab" data-tab="appointment">Подробнее</button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Медицинские документы</h3>
+                            <p>Оформление справок, выписок и других медицинских документов онлайн.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check"></i> Справки для работы</li>
+                                <li><i class="fas fa-check"></i> Больничные листы</li>
+                                <li><i class="fas fa-check"></i> Медицинские книжки</li>
+                                <li><i class="fas fa-check"></i> Выписки из карты</li>
+                            </ul>
+                            <button class="btn btn-outline open-tab" data-tab="appointment">Оформить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вкладка Врачи -->
+        <section id="doctors-tab" class="tab-content">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наши врачи и специалисты</h2>
+                    <p>В нашей поликлинике работают высококвалифицированные специалисты с многолетним опытом работы.</p>
+                </div>
+                
+                <div class="doctors-grid">
+                    <!-- Карточка первого врача -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Петрова Елена Сергеевна - врач-терапевт">
+                            <div class="img-placeholder">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="doctor-badge">Терапевт</div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Петрова Елена Сергеевна</h3>
+                            <p class="doctor-specialty">Врач-терапевт высшей категории</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-value">4.7</span>
+                            </div>
+                            <p class="doctor-exp">Стаж работы: 15 лет</p>
+                            <div class="doctor-actions">
+                                <button class="btn btn-small open-tab" data-tab="appointment">Записаться</button>
+                                <button class="btn-text">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка второго врача -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Смирнов Алексей Владимирович - кардиолог">
+                            <div class="img-placeholder">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="doctor-badge">Кардиолог</div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Смирнов Алексей Владимирович</h3>
+                            <p class="doctor-specialty">Кардиолог, к.м.н.</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                            <p class="doctor-exp">Стаж работы: 12 лет</p>
+                            <div class="doctor-actions">
+                                <button class="btn btn-small open-tab" data-tab="appointment">Записаться</button>
+                                <button class="btn-text">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка третьего врача -->
+                    <div class="doctor-card">
+                        <div class="doctor-img">
+                            <img src="https://img.freepik.com/free-photo/female-doctor-posing-with-syringe-gray_114579-39911.jpg?semt=ais_hybrid&w=740"
+                                 alt="Козлова Ольга Ивановна - врач-невролог">
+                            <div class="img-placeholder">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="doctor-badge">Невролог</div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Козлова Ольга Ивановна</h3>
+                            <p class="doctor-specialty">Врач-невролог высшей категории</p>
+                            <div class="doctor-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="rating-value">4.2</span>
+                            </div>
+                            <p class="doctor-exp">Стаж работы: 18 лет</p>
+                            <div class="doctor-actions">
+                                <button class="btn btn-small open-tab" data-tab="appointment">Записаться</button>
+                                <button class="btn-text">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вкладка Запись онлайн -->
+        <section id="appointment-tab" class="tab-content">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Запись на прием к врачу</h2>
+                    <p>Заполните форму, и наш администратор свяжется с вами в течение 15 минут для подтверждения записи.</p>
+                </div>
+                
+                <div class="appointment-container">
+                    <div class="appointment-info">
+                        <div class="appointment-features">
+                            <div class="feature">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <h4>Выберите дату и время</h4>
+                                    <p>Запишитесь на удобное для вас время</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-md"></i>
+                                <div>
+                                    <h4>Выберите специалиста</h4>
+                                    <p>Более 50 врачей разных специальностей</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bell"></i>
+                                <div>
+                                    <h4>Получите подтверждение</h4>
+                                    <p>СМС и email-уведомление о записи</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-form-container">
+                        <form class="appointment-form">
+                            <h3>Записаться на прием</h3>
+                            
+                            <div class="form-group">
+                                <label for="name">ФИО *</label>
+                                <input type="text" id="name" placeholder="Иванов Иван Иванович" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="example@mail.ru">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="doctor">Специалист *</label>
+                                    <select id="doctor" required>
+                                        <option value="" disabled selected>Выберите специалиста</option>
+                                        <option value="therapist">Терапевт</option>
+                                        <option value="cardiologist">Кардиолог</option>
+                                        <option value="neurologist">Невролог</option>
+                                        <option value="pediatrician">Педиатр</option>
+                                        <option value="surgeon">Хирург</option>
+                                        <option value="dentist">Стоматолог</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="date">Дата приема *</label>
+                                    <input type="date" id="date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Время приема *</label>
+                                <select id="time" required>
+                                    <option value="" disabled selected>Выберите время</option>
+                                    <option value="9:00">9:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Причина обращения</label>
+                                <textarea id="message" placeholder="Опишите кратко причину обращения..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">Записаться на прием <i class="fas fa-arrow-right"></i></button>
+                            <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Вкладка Отзывы и Контакты -->
+        <section id="testimonials-contacts-tab" class="tab-content">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Отзывы пациентов</h2>
+                    <p>Более 10 000 пациентов уже воспользовались нашими услугами. Вот что они говорят о нашем сервисе.</p>
+                </div>
+                
+                <div class="testimonials-contacts-container">
+                    <div class="testimonials-section">
+                        <div class="testimonials-slider">
+                            <div class="slider-container">
+                                <!-- Слайд 1 -->
+                                <div class="testimonial-slide active">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <i class="fas fa-quote-left quote-icon"></i>
+                                            <p>Очень удобный сервис! Записался на прием к терапевту за 5 минут, без очередей и ожидания. Врач был внимателен, все объяснил. Результаты анализов пришли прямо в личный кабинет. Рекомендую!</p>
+                                            <i class="fas fa-quote-right quote-icon"></i>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <div class="author-img">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4>Анна Смирнова</h4>
+                                                <p>Пациент, 35 лет</p>
+                                                <div class="author-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Слайд 2 -->
+                                <div class="testimonial-slide">
+                                    <div class="testimonial-content">
+                                        <div class="testimonial-text">
+                                            <i class="fas fa-quote-left quote-icon"></i>
+                                            <p>Пользуюсь MedOnline уже полгода. Особенно нравится функция онлайн-консультаций - не нужно ехать в поликлинику с ребенком. Педиатр всегда на связи, отвечает на все вопросы. Оформление справок в садик занимает теперь 10 минут вместо 2 часов!</p>
+                                            <i class="fas fa-quote-right quote-icon"></i>
+                                        </div>
+                                        <div class="testimonial-author">
+                                            <div class="author-img">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="author-info">
+                                                <h4>Мария Иванова</h4>
+                                                <p>Мама двоих детей</p>
+                                                <div class="author-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Индикаторы слайдов -->
+                            <div class="slider-indicators">
+                                <button class="indicator active" data-slide="0"></button>
+                                <button class="indicator" data-slide="1"></button>
+                            </div>
+                            
+                            <!-- Кнопки навигации -->
+                            <button class="slider-btn prev-btn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-btn next-btn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contacts-section">
+                        <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                            <h2>Контакты</h2>
+                            <p>Свяжитесь с нами удобным для вас способом.</p>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Адрес</h3>
+                                    <p>г. Москва, ул. Медицинская, д. 15</p>
+                                    <p class="contact-note">Ближайшая станция метро: "Медицинская"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Телефон</h3>
+                                    <p>+7 (495) 123-45-67</p>
+                                    <p class="contact-note">Единый call-центр, работает круглосуточно</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>info@medonline.ru</p>
+                                    <p class="contact-note">Отвечаем в течение 24 часов</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Часы работы</h3>
+                                    <p>Пн-Пт: 8:00-20:00</p>
+                                    <p>Сб: 9:00-18:00</p>
+                                    <p class="contact-note">Онлайн-запись доступна 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+                    <a href="#" class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>MedOnline</span>
+                    </a>
+                    <p>Современный онлайн-сервис для записи на прием к врачу и получения медицинских услуг. Здоровье — это главное, и мы делаем его доступным.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><button class="footer-link open-tab" data-tab="home-services">Главная и услуги</button></li>
+                        <li><button class="footer-link open-tab" data-tab="doctors">Врачи</button></li>
+                        <li><button class="footer-link open-tab" data-tab="appointment">Запись онлайн</button></li>
+                        <li><button class="footer-link open-tab" data-tab="testimonials-contacts">Отзывы и контакты</button></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Услуги</h3>
+                    <ul>
+                        <li><a href="#">Консультации врачей</a></li>
+                        <li><a href="#">Диагностика и анализы</a></li>
+                        <li><a href="#">Медицинские справки</a></li>
+                        <li><a href="#">Выезд врача на дом</a></li>
+                        <li><a href="#">Онлайн-консультации</a></li>
+                        <li><a href="#">Результаты анализов</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>г. Москва, ул. Медицинская, д. 15</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (495) 123-45-67</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@medonline.ru</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Пн-Пт: 8:00-20:00, Сб: 9:00-18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 MedOnline. Все права защищены.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Система вкладок
+        document.addEventListener('DOMContentLoaded', function() {
+            // Элементы для управления вкладками
+            const navLinks = document.querySelectorAll('.nav-link, .open-tab, .footer-link');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            // Функция для переключения вкладок
+            function switchTab(tabName) {
+                // Скрываем все вкладки
+                tabContents.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                
+                // Деактивируем все кнопки навигации
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Показываем выбранную вкладку
+                const activeTab = document.getElementById(`${tabName}-tab`);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                }
+                
+                // Активируем соответствующую кнопку в навигации
+                const activeNavLink = document.querySelector(`.nav-link[data-tab="${tabName}"]`);
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+                
+                // Прокручиваем к началу контента
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            
+            // Обработчики для кнопок вкладок
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const tabName = this.getAttribute('data-tab');
+                    if (tabName) {
+                        switchTab(tabName);
+                    }
+                });
+            });
+            
+            // Мобильное меню
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinksContainer = document.querySelector('.nav-links');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navLinksContainer.style.display = 
+                        navLinksContainer.style.display === 'flex' ? 'none' : 'flex';
+                    
+                    if (navLinksContainer.style.display === 'flex') {
+                        navLinksContainer.style.flexDirection = 'column';
+                        navLinksContainer.style.position = 'absolute';
+                        navLinksContainer.style.top = '100%';
+                        navLinksContainer.style.left = '0';
+                        navLinksContainer.style.right = '0';
+                        navLinksContainer.style.backgroundColor = 'white';
+                        navLinksContainer.style.padding = '20px';
+                        navLinksContainer.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                        navLinksContainer.style.gap = '15px';
+                    }
+                });
+            }
+            
+            // Слайдер отзывов
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Функция показа слайда
+            function showSlide(index) {
+                // Скрываем все слайды
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                
+                // Убираем активный класс со всех индикаторов
+                indicators.forEach(indicator => {
+                    indicator.classList.remove('active');
+                });
+                
+                // Показываем текущий слайд и активируем соответствующий индикатор
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                
+                currentSlide = index;
+            }
+            
+            // Функция следующего слайда
+            function nextSlide() {
+                let nextIndex = (currentSlide + 1) % slides.length;
+                showSlide(nextIndex);
+            }
+            
+            // Функция предыдущего слайда
+            function prevSlide() {
+                let prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prevIndex);
+            }
+            
+            // Автопереключение слайдов каждые 5 секунд
+            function startAutoSlide() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            // Остановка автопереключения
+            function stopAutoSlide() {
+                clearInterval(slideInterval);
+            }
+            
+            // Назначаем обработчики событий
+            if (nextBtn && prevBtn) {
+                nextBtn.addEventListener('click', function() {
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                
+                prevBtn.addEventListener('click', function() {
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                });
+                
+                // Обработчики для индикаторов
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', function() {
+                        showSlide(index);
+                        stopAutoSlide();
+                        startAutoSlide();
+                    });
+                });
+                
+                // Останавливаем автопрокрутку при наведении на слайдер
+                const slider = document.querySelector('.testimonials-slider');
+                slider.addEventListener('mouseenter', stopAutoSlide);
+                slider.addEventListener('mouseleave', startAutoSlide);
+                
+                // Запускаем автопрокрутку при загрузке страницы
+                startAutoSlide();
+            }
+            
+            // Инициализация текущей вкладки
+            switchTab('home-services');
+        });
+    </script>
+</body>
+</html>
